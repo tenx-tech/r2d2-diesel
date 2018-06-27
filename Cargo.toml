@@ -9,4 +9,8 @@ repository = "https://github.com/sgrif/r2d2-diesel"
 
 [dependencies]
 r2d2 = ">= 0.7, < 0.9"
-diesel = "1.0"
+
+[dependencies.diesel]
+features = ["postgres", "extras"]
+git = "https://github.com/diesel-rs/diesel.git"
+rev = "b0dd75e"
